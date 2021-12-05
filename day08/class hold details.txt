@@ -1,0 +1,50 @@
+1.Write a “person” class to hold all the details. 
+class person {
+  constructor(name,father_name,aadhar_no,mother_name,gender,address,mobile_No,Email) {
+    this.name = name ;
+    this.father_name = father_name ;
+    this.mother_name = mother_name;
+    this.aadhar_no = aadhar_no;
+    this.gender = gender; 
+    this.address = address ;
+    this.mobile_No = mobile_No; 
+    this.Email = Email;
+ }
+  person_name() {
+    return `my name is  ${this.name}`;
+  }
+
+  person_father_name() {
+    return `my father name is ${this.father_name}`;
+  }
+  person_mother_name() {
+    return `my mother name is ${this.mother_name}`;
+  }
+  person_aadhar_no() {
+    return `aadhar_no  is ${this.aadhar_no}`;
+  }
+  person_gender() {
+    return `i am ${this.gender}`;
+  }
+  person_address() {
+    return `my addressis ${this.adress}`;
+  }
+  person_mobile_no() {
+    return `my mobile_no is ${this.mobile_No}`;
+  }
+  person_Email() {
+    return `my email is ${this.Email}`;
+  }
+}
+//object
+const john_obj = new person("john","johndoe","anna","2413-4132-9809","M","hyd","123456","john@gmail.com");
+
+console.log(john_obj.person_name());
+console.log(john_obj.person_father_name());
+console.log(john_obj.person_mother_name());
+console.log(john_obj.person_aadhar_no());
+
+console.log(john_obj.person_gender());
+console.log(john_obj.person_address());
+console.log(john_obj.person_mobile_no());
+console.log(john_obj.person_Email());
